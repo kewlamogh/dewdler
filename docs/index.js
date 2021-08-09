@@ -1,5 +1,5 @@
 let pen = document.getElementById("c").getContext("2d");
-let mouse;
+let mouse = {isDown: false};
 window.onload = (e) => {
     mouse = {
         isDown: false,
