@@ -1,19 +1,19 @@
 let pen = document.getElementById("c").getContext("2d");
 let mouse = {isDown: false};
-window.onload = (e) => {
+document.body.onload = (e) => {
     mouse = {
         isDown: false,
         pos: {x: e.clientX, y: e.clientY}
     }
 }
-window.onmousemove = (e) => {
+document.body.onmousemove = (e) => {
     mouse.pos.x = e.clientX;
     mouse.pos.y = e.clientY;
 }
-window.onmousedown = () => {
+document.body.onmousedown = () => {
     mouse.isDown = true;
 }
-window.onmouseup = () => {
+document.body.onmouseup = () => {
     mouse.isDown = false;
 }
 
