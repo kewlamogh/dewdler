@@ -1,5 +1,6 @@
 let pen = document.getElementById("c").getContext("2d");
 let mouse = {isDown: false};
+let line = {size: 10};
 document.body.onload = (e) => {
     mouse = {
         isDown: false,
@@ -19,9 +20,10 @@ document.body.onmouseup = () => {
 
 function main() {
     if (mouse.isDown) {
+        pen.lineWidth = line.size;
         pen.beginPath();
         pen.moveTo(mouse.pos.x, mouse.pos.y);
-        pen.lineTo(mouse.pos.x, mouse.pos.y);
+        pen.lineTo(mouse.pos.x + 1, mouse.pos.y);
         pen.stroke();
     }
     requestAnimationFrame(main);
