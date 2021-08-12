@@ -3,6 +3,7 @@
     cursor: url("cart.cur");
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
+    overflow: hidden;
 }
 canvas {
     background-color: lightgray;
