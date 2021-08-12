@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 * {
-    cursor: url("C:\Users\amogh\Downloads\cart.jpg");
+    cursor: url("cart.cur");
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+canvas {
+    background-color: lightgray;
+    border: 2px solid black;
 }
